@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polityka prywatnosci - My Library</title>
+  <meta name="description" content="Polityka prywatnosci aplikacji My Library / MyBookshelf.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f8f3ea;
+      --panel: #fffaf1;
+      --ink: #24170f;
+      --muted: #6f5f52;
+      --accent: #8b4b22;
+      --accent-strong: #5f3117;
+      --line: #e2d2bf;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(139, 75, 34, 0.16), transparent 34rem),
+        radial-gradient(circle at 90% 18%, rgba(95, 49, 23, 0.10), transparent 28rem),
+        linear-gradient(135deg, #f8f3ea 0%, #efe1cf 100%);
+      line-height: 1.58;
+    }
+
+    main {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    .card {
+      background: rgba(255, 250, 241, 0.94);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: 0 24px 80px rgba(67, 43, 25, 0.14);
+      overflow: hidden;
+    }
+
+    header {
+      padding: 42px 42px 28px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(139, 75, 34, 0.13), rgba(255, 250, 241, 0));
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 0.96;
+      letter-spacing: -0.04em;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.45rem;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      margin: 18px 0 8px;
+      font-size: 1.08rem;
+    }
+
+    p { margin: 0 0 14px; }
+
+    a { color: var(--accent-strong); }
+
+    .lead {
+      max-width: 780px;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .content {
+      display: grid;
+      gap: 22px;
+      padding: 32px 42px 42px;
+    }
+
+    section {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.40);
+    }
+
+    ul {
+      margin: 0 0 14px;
+      padding-left: 22px;
+    }
+
+    li { margin: 8px 0; }
+
+    .notice {
+      border-left: 5px solid var(--accent);
+      background: rgba(139, 75, 34, 0.08);
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      background: var(--line);
+    }
+
+    @media (max-width: 640px) {
+      main { width: min(100% - 20px, 980px); padding: 20px 0; }
+      header, .content { padding-left: 20px; padding-right: 20px; }
+      section { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="card">
+      <header>
+        <h1>Polityka prywatnosci / Privacy Policy</h1>
+        <p class="lead">Ta polityka opisuje, jakie dane moga byc przetwarzane przez aplikacje <strong>My Library</strong> / <strong>MyBookshelf</strong>, w jakim celu oraz jak uzytkownik moze skontaktowac sie w sprawach prywatnosci.</p>
+        <p class="meta">Ostatnia aktualizacja: 24 czerwca 2026<br>Kontakt: <a href="mailto:mylibrary@mycloudmails.com">mylibrary@mycloudmails.com</a></p>
+      </header>
+
+      <div class="content">
+        <section class="notice" lang="pl">
+          <h2>Podsumowanie</h2>
+          <p>Aplikacja sluzy do prowadzenia prywatnej biblioteki ksiazek. Dane biblioteki sa zapisywane lokalnie na urzadzeniu. Jezeli uzytkownik utworzy konto i uzyje funkcji chmury, wybrane dane konta i kopia biblioteki sa przesylane do uslugi Supabase.</p>
+        </section>
+
+        <section lang="pl">
+          <h2>Administrator i kontakt</h2>
+          <p>W sprawach dotyczacych prywatnosci, danych uzytkownika lub usuniecia konta skontaktuj sie z nami pod adresem <a href="mailto:mylibrary@mycloudmails.com">mylibrary@mycloudmails.com</a>.</p>
+        </section>
+
+        <section lang="pl">
+          <h2>Jakie dane przetwarzamy</h2>
+          <h3>Dane konta</h3>
+          <ul>
+            <li>adres e-mail,</li>
+            <li>identyfikator konta uzytkownika,</li>
+            <li>publiczny user_ID i opcjonalna nazwa wyswietlana, jezeli uzytkownik jej uzyje.</li>
+          </ul>
+
+          <h3>Dane biblioteki</h3>
+          <ul>
+            <li>tytuly ksiazek, autorzy, ISBN, gatunki, oceny i status czytania,</li>
+            <li>lista zyczen, historia czytania i dane podsumowan,</li>
+            <li>adresy URL okladek oraz lokalnie zapisane obrazy okladek.</li>
+          </ul>
+
+          <h3>Dane techniczne i zgloszenia</h3>
+          <ul>
+            <li>tresc zgloszen bledu lub wiadomosci wyslanych przez uzytkownika,</li>
+            <li>opcjonalny zrzut ekranu dolaczony do zgloszenia,</li>
+            <li>wersja aplikacji, jezyk aplikacji i wybrane ustawienia wygladu, jezeli sa dolaczone do zgloszenia.</li>
+          </ul>
+        </section>
+
+        <section lang="pl">
+          <h2>Uprawnienia aplikacji</h2>
+          <ul>
+            <li><strong>Internet</strong> jest uzywany do logowania, kopii zapasowej w chmurze, wyszukiwania informacji o ksiazkach i pobierania okladek.</li>
+            <li><strong>Kamera</strong> jest uzywana do skanowania kodow ISBN. Obraz z kamery nie jest uzywany do identyfikacji uzytkownika.</li>
+          </ul>
+        </section>
+
+        <section lang="pl">
+          <h2>Po co uzywamy danych</h2>
+          <ul>
+            <li>do utworzenia konta i logowania,</li>
+            <li>do zapisu i przywracania biblioteki,</li>
+            <li>do udostepniania biblioteki znajomym po akceptacji zaproszenia,</li>
+            <li>do wyszukiwania informacji o ksiazkach po ISBN lub tytule,</li>
+            <li>do obslugi zgloszen bledow i poprawy aplikacji,</li>
+            <li>do zapewnienia bezpieczenstwa i zapobiegania naduzyciom.</li>
+          </ul>
+        </section>
+
+        <section lang="pl">
+          <h2>Udostepnianie danych i uslugi zewnetrzne</h2>
+          <p>Aplikacja moze przekazywac dane do uslug zewnetrznych tylko w zakresie potrzebnym do dzialania funkcji aplikacji.</p>
+          <ul>
+            <li><strong>Supabase</strong> - obsluga kont, logowania, profili, kopii zapasowych biblioteki, udostepniania biblioteki i zgloszen.</li>
+            <li><strong>Zewnetrzne bazy ksiazek i okladek</strong> - wyszukiwanie informacji o ksiazkach, ISBN i okladkach. Zapytania moga zawierac ISBN, tytul lub autora.</li>
+            <li><strong>Dostawcy systemowi Android / Google</strong> - system moze wykonywac kopie zapasowe aplikacji zgodnie z ustawieniami urzadzenia i konta Google uzytkownika.</li>
+          </ul>
+          <p>Nie sprzedajemy danych osobowych uzytkownikow.</p>
+        </section>
+
+        <section lang="pl">
+          <h2>Bezpieczenstwo danych</h2>
+          <p>Transmisja danych do uslug internetowych odbywa sie przez HTTPS. Dane zapisane lokalnie w aplikacji sa przechowywane w prywatnym katalogu aplikacji Android. Aplikacja nie stosuje obecnie dodatkowego szyfrowania lokalnych plikow biblioteki ani lokalnie zapisanej sesji poza mechanizmami systemu Android.</p>
+        </section>
+
+        <section lang="pl">
+          <h2>Przechowywanie i usuwanie danych</h2>
+          <p>Dane lokalne pozostaja na urzadzeniu do czasu ich usuniecia przez uzytkownika, wyczyszczenia danych aplikacji albo odinstalowania aplikacji. Dane zapisane w chmurze pozostaja na koncie do czasu usuniecia konta lub zlozenia prosby o usuniecie.</p>
+          <p>Prosbe o usuniecie konta mozna wyslac na adres <a href="mailto:mylibrary@mycloudmails.com?subject=Usuniecie%20konta%20My%20Library">mylibrary@mycloudmails.com</a>. Strona usuniecia konta powinna byc dostepna pod osobnym publicznym adresem URL po jej opublikowaniu.</p>
+        </section>
+
+        <section lang="pl">
+          <h2>Prawa uzytkownika</h2>
+          <p>Uzytkownik moze poprosic o dostep do swoich danych, sprostowanie danych, usuniecie konta, ograniczenie przetwarzania lub informacje o danych przechowywanych przez aplikacje. W tym celu nalezy napisac na <a href="mailto:mylibrary@mycloudmails.com">mylibrary@mycloudmails.com</a>.</p>
+        </section>
+
+        <section lang="pl">
+          <h2>Dzieci</h2>
+          <p>Aplikacja nie jest przeznaczona do celowego zbierania danych dzieci. Jezeli uwazasz, ze dziecko przekazalo nam dane osobowe, skontaktuj sie z nami, aby mozna bylo je usunac.</p>
+        </section>
+
+        <section lang="pl">
+          <h2>Zmiany polityki</h2>
+          <p>Ta polityka moze zostac zaktualizowana, jezeli zmienia sie funkcje aplikacji, wymagania prawne albo sposob przetwarzania danych. Aktualna wersja bedzie publikowana na tej stronie.</p>
+        </section>
+
+        <div class="divider" aria-hidden="true">English</div>
+
+        <section class="notice" lang="en">
+          <h2>Summary</h2>
+          <p>The app is used to manage a private book library. Library data is stored locally on the device. If the user creates an account and uses cloud features, selected account data and a library backup are sent to Supabase.</p>
+        </section>
+
+        <section lang="en">
+          <h2>Controller and contact</h2>
+          <p>For privacy, user data, or account deletion requests, contact us at <a href="mailto:mylibrary@mycloudmails.com">mylibrary@mycloudmails.com</a>.</p>
+        </section>
+
+        <section lang="en">
+          <h2>Data we process</h2>
+          <h3>Account data</h3>
+          <ul>
+            <li>email address,</li>
+            <li>user account identifier,</li>
+            <li>public user_ID and optional display name, if used.</li>
+          </ul>
+
+          <h3>Library data</h3>
+          <ul>
+            <li>book titles, authors, ISBN numbers, genres, ratings, and reading status,</li>
+            <li>wishlist, reading history, and summary data,</li>
+            <li>cover image URLs and locally stored cover images.</li>
+          </ul>
+
+          <h3>Technical data and reports</h3>
+          <ul>
+            <li>bug report or message content submitted by the user,</li>
+            <li>optional screenshot attached to a report,</li>
+            <li>app version, app language, and selected appearance settings if included in a report.</li>
+          </ul>
+        </section>
+
+        <section lang="en">
+          <h2>App permissions</h2>
+          <ul>
+            <li><strong>Internet</strong> is used for sign-in, cloud backup, book lookup, and downloading cover images.</li>
+            <li><strong>Camera</strong> is used to scan ISBN codes. Camera images are not used to identify the user.</li>
+          </ul>
+        </section>
+
+        <section lang="en">
+          <h2>Why we use data</h2>
+          <ul>
+            <li>to create accounts and sign users in,</li>
+            <li>to save and restore the library,</li>
+            <li>to share a library with friends after an invitation is accepted,</li>
+            <li>to search for book information by ISBN or title,</li>
+            <li>to handle bug reports and improve the app,</li>
+            <li>to maintain security and prevent abuse.</li>
+          </ul>
+        </section>
+
+        <section lang="en">
+          <h2>Data sharing and external services</h2>
+          <p>The app may send data to external services only as needed for app features.</p>
+          <ul>
+            <li><strong>Supabase</strong> - account handling, sign-in, profiles, library backups, library sharing, and reports.</li>
+            <li><strong>External book and cover databases</strong> - book, ISBN, and cover lookup. Requests may include ISBN, title, or author.</li>
+            <li><strong>Android / Google system providers</strong> - the system may back up app data according to the user's device and Google account settings.</li>
+          </ul>
+          <p>We do not sell users' personal data.</p>
+        </section>
+
+        <section lang="en">
+          <h2>Data security</h2>
+          <p>Data sent to internet services is transmitted over HTTPS. Data stored locally by the app is kept in the app's private Android directory. The app currently does not add extra encryption for local library files or the locally stored session beyond Android system mechanisms.</p>
+        </section>
+
+        <section lang="en">
+          <h2>Retention and deletion</h2>
+          <p>Local data remains on the device until the user deletes it, clears app data, or uninstalls the app. Cloud data remains on the account until the account is deleted or a deletion request is submitted.</p>
+          <p>Account deletion requests can be sent to <a href="mailto:mylibrary@mycloudmails.com?subject=My%20Library%20account%20deletion">mylibrary@mycloudmails.com</a>. The account deletion page should be available at a separate public URL after publication.</p>
+        </section>
+
+        <section lang="en">
+          <h2>User rights</h2>
+          <p>Users may request access to their data, correction, account deletion, restriction of processing, or information about data stored by the app. To do so, email <a href="mailto:mylibrary@mycloudmails.com">mylibrary@mycloudmails.com</a>.</p>
+        </section>
+
+        <section lang="en">
+          <h2>Children</h2>
+          <p>The app is not intended to knowingly collect children's personal data. If you believe a child has provided personal data to us, contact us so it can be removed.</p>
+        </section>
+
+        <section lang="en">
+          <h2>Changes to this policy</h2>
+          <p>This policy may be updated if app features, legal requirements, or data processing practices change. The current version will be published on this page.</p>
+        </section>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
